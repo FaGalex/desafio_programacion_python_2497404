@@ -1,7 +1,9 @@
 def es_palindromo(texto):
-
-    texto_minuscula = texto.lower()
-    texto_sin_espacios = texto_minuscula.replace(" ", "")
+    texto_mayuscula = texto.upper()
+    texto_sin_espacios = texto_mayuscula.replace(" ", "")
+    print(texto_mayuscula)
+    print(texto_sin_espacios)
+    print(texto_sin_espacios[::-1])
     return texto_sin_espacios == texto_sin_espacios[::-1]
 
 
